@@ -1,0 +1,14 @@
+
+PARAMS: 
+epochs =  45
+batch_size =  24
+maxpoolsize =  3
+avgpoolsize =  6
+kernel_size =  4
+optimizer =  Adam
+activation =  relu
+kernel_initializer =  normal
+strides =  6
+num_unit =  128
+initial_kernel_size =  24
+learnign_rate =  9e-05

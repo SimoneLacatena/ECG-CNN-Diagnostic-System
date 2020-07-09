@@ -1,0 +1,13 @@
+params = {
+    'num_unit' : 128,
+    'initial_kernel_size' : 80,
+    'strides' : 4,
+    'maxpooling_poolsize' : 4,
+    'activation' : 'relu',
+    'kernel_size' : 4 ,
+    'avg_poolsize' : 2 ,
+    'kernel_inizializer' :'normal',
+    'optimizer' : tensorflow.keras.optimizers.Adam,
+    'epochs' : 100,
+    'batch_size' : 32
+}

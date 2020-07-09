@@ -91,7 +91,7 @@ def createCNN(num_unit = 7,initial_kernel_size = 80,strides = 4 ,kernel_initiali
     '''layer 5'''
     cnn.add(AveragePooling1D(pool_size = avg_poolsize))
     cnn.add(Flatten())
-    cnn.add(Dense(n_classes, kernel_initializer=kernel_initializer, activation='softmax'))
+    cnn.add(Dense(n_classes,kernel_initializer = kernel_initializer, activation='softmax'))
 
     return cnn
 
@@ -244,12 +244,12 @@ def finalPrediction(LearningX,LearningY,TestX,TestY,model, save_dir,batch_size=1
     TestY = keras.utils.to_categorical(TestY, n_classes)
 
 
-    #checpoint_dir = save_dir + '/final_model.h5'
-    #checkpoint = ModelCheckpoint(checpoint_dir, monitor='val_recall', verbose=1, save_best_only=True, mode='max')
+    checpoint_dir = save_dir + '/final_model.h5'
+    checkpoint = ModelCheckpoint(checpoint_dir, monitor='val_recall', verbose=1, save_best_only=True, mode='max')
 
-    model.fit(LearningX,LearningY,batch_size=batch_size,epochs=epochs, verbose=1)
+    model.fit(LearningX,LearningY,batch_size=batch_size,validation_split = 0.1,epochs=epochs, verbose=1,callbacks = [checkpoint])
 
-    #model.load_weights(checpoint_dir)
+    model.load_weights(checpoint_dir)
     Ypred = model.predict(TestX)
     showConfusionMatrix(TestY,Ypred)
     model.save(save_dir + '/final_model')
@@ -260,21 +260,20 @@ K = 10
 #Parametres
 #-----------------------------------  
 
-BATCH_SIZE = 32  
+BATCH_SIZE = 64  
 MAXPOOL_POOL_SIZE = 4
-AVGPOOL_POOL_SIZE = 2
-KERNEL_SIZE = 4
-KERNEL_INITIALIZER = 'normal'
+AVGPOOL_POOL_SIZE = 4
+KERNEL_SIZE = 8
 STRIDES = 4
-INITIAL_KERNEL_SIZE = 80
+INITIAL_KERNEL_SIZE = 40
 NUM_UNIT = 7  # 2^NUM_UNIT  128 unit
 
-
+KERNEL_INITIALIZER = 'normal'
 LOSS_FUNCTION = 'binary_crossentropy'
 ACTIVATION = 'relu'
 EPOCHS = 100
 OPTIMIZER = 'adam'
-#LEARNING_RATE = 0.1
+
 
 #--------------------------------
 
@@ -289,7 +288,7 @@ def CNN_LOAD():
                        activation= ACTIVATION,
                        avg_poolsize = AVGPOOL_POOL_SIZE,
                        kernel_size = KERNEL_SIZE)
-    model.compile(optimizer=OPTIMIZER, loss=LOSS_FUNCTION, metrics=['accuracy',tensorflow.keras.metrics.Recall(name='recall')])
+    model.compile(optimizer=OPTIMIZER, loss=LOSS_FUNCTION, metrics=['accuracy',tensorflow.keras.metrics.Recall(name ='recall')])
     return model
 
 
@@ -310,7 +309,6 @@ print('strides = ',STRIDES )
 print('num_unit = ',2**NUM_UNIT)
 LOSS_FUNCTION = 'binary_crossentropy'
 print('initial_kernel_size = ',INITIAL_KERNEL_SIZE)
-#print('learnign_rate = ',LEARNING_RATE)
 
 
 
@@ -327,7 +325,7 @@ xLearning,xTest,yLearning,yTest=process_ECGDATA(data)
 print('DONE')
 
 print("start validation")
-#validation(CNN_LOAD,xLearning,yLearning,save_dir=SAVE_DIR,epochs=EPOCHS, K= K,batch_size=BATCH_SIZE)
+validation(CNN_LOAD,xLearning,yLearning,save_dir=SAVE_DIR,epochs=EPOCHS, K= K,batch_size=BATCH_SIZE)
 
 print("start final prediction")
 model = CNN_LOAD()

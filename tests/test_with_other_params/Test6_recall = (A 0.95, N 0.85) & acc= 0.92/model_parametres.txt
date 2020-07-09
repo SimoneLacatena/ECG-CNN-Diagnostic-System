@@ -1,0 +1,9 @@
+{   'activation': 'relu',
+    'avg_poolsize': 4,
+    'batch_size': 24,
+    'comm_conv_kernel_size': 4,
+    'epochs': 50,
+    'learning_rate': 0.1,
+    'maxpooling_poolsize': 4,
+    'num_unit': 8,
+    'optimizer': <class 'keras.optimizers.SGD'>}
