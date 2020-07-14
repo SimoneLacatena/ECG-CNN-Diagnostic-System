@@ -1,0 +1,8 @@
+ segment n.ro2:
+  track n.ro  112
+  from sample  270000 to 275400
+  annotations : {'~', 'N'}
+segment n.ro1:
+  track n.ro  116
+  from sample  545400 to 550800
+  annotations : {'N', 'V'}

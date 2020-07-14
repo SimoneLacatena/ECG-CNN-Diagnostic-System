@@ -1,0 +1,172 @@
+ segment n.ro16:
+  track n.ro  100
+  from sample  64800 to 70200
+  annotations : {'A', 'N'}
+segment n.ro29:
+  track n.ro  100
+  from sample  0 to 5400
+  annotations : {'A', 'N'}
+segment n.ro10:
+  track n.ro  105
+  from sample  124200 to 129600
+  annotations : {'V', 'N', '~'}
+segment n.ro33:
+  track n.ro  105
+  from sample  561600 to 567000
+  annotations : {'N', '~'}
+segment n.ro18:
+  track n.ro  106
+  from sample  178200 to 183600
+  annotations : {'N', '~'}
+segment n.ro22:
+  track n.ro  106
+  from sample  507600 to 513000
+  annotations : {'N', '~'}
+segment n.ro38:
+  track n.ro  106
+  from sample  64800 to 70200
+  annotations : {'N', '~'}
+segment n.ro4:
+  track n.ro  108
+  from sample  523800 to 529200
+  annotations : {'V', 'A', 'N', 'x'}
+segment n.ro7:
+  track n.ro  108
+  from sample  259200 to 264600
+  annotations : {'A', 'N'}
+segment n.ro13:
+  track n.ro  108
+  from sample  642600 to 648000
+  annotations : {'N', '~'}
+segment n.ro24:
+  track n.ro  108
+  from sample  394200 to 399600
+  annotations : {'N', '~'}
+segment n.ro42:
+  track n.ro  108
+  from sample  113400 to 118800
+  annotations : {'N', '|'}
+segment n.ro25:
+  track n.ro  115
+  from sample  513000 to 518400
+  annotations : {'N', '|'}
+segment n.ro12:
+  track n.ro  116
+  from sample  297000 to 302400
+  annotations : {'V', 'A', 'N'}
+segment n.ro21:
+  track n.ro  116
+  from sample  48600 to 54000
+  annotations : {'V', 'N'}
+segment n.ro28:
+  track n.ro  121
+  from sample  86400 to 91800
+  annotations : {'N', '~'}
+segment n.ro23:
+  track n.ro  123
+  from sample  151200 to 156600
+  annotations : {'V', 'N'}
+segment n.ro20:
+  track n.ro  201
+  from sample  135000 to 140400
+  annotations : {'j', 'N', '+'}
+segment n.ro11:
+  track n.ro  202
+  from sample  140400 to 145800
+  annotations : {'A', 'N'}
+segment n.ro26:
+  track n.ro  202
+  from sample  480600 to 486000
+  annotations : {'a', 'N'}
+segment n.ro34:
+  track n.ro  205
+  from sample  297000 to 302400
+  annotations : {'F', 'N'}
+segment n.ro2:
+  track n.ro  209
+  from sample  145800 to 151200
+  annotations : {'A', 'N'}
+segment n.ro37:
+  track n.ro  209
+  from sample  448200 to 453600
+  annotations : {'N', '~'}
+segment n.ro40:
+  track n.ro  209
+  from sample  469800 to 475200
+  annotations : {'A', 'N'}
+segment n.ro5:
+  track n.ro  212
+  from sample  124200 to 129600
+  annotations : {'R', 'N'}
+segment n.ro15:
+  track n.ro  215
+  from sample  108000 to 113400
+  annotations : {'V', 'N'}
+segment n.ro43:
+  track n.ro  215
+  from sample  464400 to 469800
+  annotations : {'V', 'N'}
+segment n.ro32:
+  track n.ro  219
+  from sample  113400 to 118800
+  annotations : {'N', '+'}
+segment n.ro36:
+  track n.ro  219
+  from sample  226800 to 232200
+  annotations : {'V', 'N'}
+segment n.ro19:
+  track n.ro  220
+  from sample  329400 to 334800
+  annotations : {'A', 'N'}
+segment n.ro27:
+  track n.ro  220
+  from sample  302400 to 307800
+  annotations : {'A', 'N'}
+segment n.ro8:
+  track n.ro  222
+  from sample  216000 to 221400
+  annotations : {'A', 'N'}
+segment n.ro9:
+  track n.ro  222
+  from sample  561600 to 567000
+  annotations : {'A', 'N', '+'}
+segment n.ro3:
+  track n.ro  223
+  from sample  194400 to 199800
+  annotations : {'A', 'N'}
+segment n.ro31:
+  track n.ro  223
+  from sample  324000 to 329400
+  annotations : {'A', 'N', 'e'}
+segment n.ro41:
+  track n.ro  223
+  from sample  345600 to 351000
+  annotations : {'A', 'N'}
+segment n.ro39:
+  track n.ro  228
+  from sample  0 to 5400
+  annotations : {'N', '|'}
+segment n.ro1:
+  track n.ro  230
+  from sample  37800 to 43200
+  annotations : {'N', '+'}
+segment n.ro6:
+  track n.ro  230
+  from sample  318600 to 324000
+  annotations : {'N', '+'}
+segment n.ro14:
+  track n.ro  230
+  from sample  361800 to 367200
+  annotations : {'N', '+'}
+segment n.ro17:
+  track n.ro  230
+  from sample  210600 to 216000
+  annotations : {'N', '+'}
+segment n.ro30:
+  track n.ro  230
+  from sample  513000 to 518400
+  annotations : {'N', '+'}
+segment n.ro35:
+  track n.ro  230
+  from sample  243000 to 248400
+  annotations : {'N', '+'}
