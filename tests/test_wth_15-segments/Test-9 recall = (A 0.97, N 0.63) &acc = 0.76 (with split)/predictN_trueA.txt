@@ -5,11 +5,12 @@
 segment n.ro11:
   track n.ro  105
   from sample  243000 to 248400
-  annotations : {'N', '~'}
+  annotations : {'~', 'N'}
 segment n.ro13:
   track n.ro  106
   from sample  0 to 5400
   annotations : {'N', '+'}
+
 segment n.ro1:
   track n.ro  116
   from sample  124200 to 129600
@@ -17,11 +18,11 @@ segment n.ro1:
 segment n.ro2:
   track n.ro  121
   from sample  75600 to 81000
-  annotations : {'N', '~'}
+  annotations : {'~', 'N'}
 segment n.ro3:
   track n.ro  202
   from sample  480600 to 486000
-  annotations : {'N', 'a'}
+  annotations : {'a', 'N'}
 segment n.ro9:
   track n.ro  202
   from sample  302400 to 307800
