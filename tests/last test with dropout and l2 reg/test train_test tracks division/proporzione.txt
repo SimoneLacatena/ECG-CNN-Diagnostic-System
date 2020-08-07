@@ -1,0 +1,827 @@
+
+ASUS@Chain MINGW64 /d/UNIVERSITA/Università/Sistemi Multimediali/ECG-CNN-Diagnostic-System/data-15segments/dataset (master)
+$ py dataset.py
+data100.csv
+_________________________________
+_________________________________
+A : 29
+N : 91
+_________________________________
+tracks_train :  [] len : 0
+train A : 0
+train N : 0
+n_segments:  0
+Traceback (most recent call last):
+  File "dataset.py", line 90, in <module>
+    union()
+  File "dataset.py", line 45, in union
+    print("porportion: " , 'A : ' + str((train_prop['A']/n)*100) + '%' + ' N  : ' + str((train_prop['N']/n)*100) + '%')
+ZeroDivisionError: division by zero
+
+ASUS@Chain MINGW64 /d/UNIVERSITA/Università/Sistemi Multimediali/ECG-CNN-Diagnostic-System/data-15segments/dataset (master)
+$ py dataset.py                                                                                                                                                                                                                              data100.csv
+_________________________________
+_________________________________
+A : 29
+N : 91
+_________________________________
+tracks_train :  [] len : 0
+train A : 0
+train N : 0
+n_segments:  0
+Traceback (most recent call last):
+  File "dataset.py", line 93, in <module>
+    union()
+  File "dataset.py", line 45, in union
+    print("porportion: " , 'A : ' + str((train_prop['A']/n)*100) + '%' + ' N  : ' + str((train_prop['N']/n)*100) + '%')
+ZeroDivisionError: division by zero
+
+ASUS@Chain MINGW64 /d/UNIVERSITA/Università/Sistemi Multimediali/ECG-CNN-Diagnostic-System/data-15segments/dataset (master)
+$ 2                                                                                                                                                                                                                                          bash: 2: command not found
+
+ASUS@Chain MINGW64 /d/UNIVERSITA/Università/Sistemi Multimediali/ECG-CNN-Diagnostic-System/data-15segments/dataset (master)
+$ py dataset.py
+data100.csv
+_________________________________
+_________________________________
+A : 29
+N : 91
+_________________________________
+tracks_train :  [] len : 0
+train A : 0
+train N : 0
+n_segments:  1
+porportion:  A : 0.0% N  : 0.0%
+_________________________________
+tracks_test :  [] len : 0
+test A : 0
+test N : 0
+n_segments:  1
+porportion:  A : 0.0% N  : 0.0%
+1:train , 2:test2
+data101.csv
+_________________________________
+_________________________________
+A : 7
+N : 113
+_________________________________
+tracks_train :  [] len : 0
+train A : 0
+train N : 0
+n_segments:  120
+porportion:  A : 0.0% N  : 0.0%
+_________________________________
+tracks_test :  ['data100.csv'] len : 1
+test A : 29
+test N : 91
+n_segments:  120
+porportion:  A : 24.166666666666668% N  : 75.83333333333333%
+1:train , 2:test1
+data103.csv
+_________________________________
+_________________________________
+A : 8
+N : 112
+_________________________________
+tracks_train :  ['data101.csv'] len : 1
+train A : 7
+train N : 113
+n_segments:  120
+porportion:  A : 5.833333333333333% N  : 94.16666666666667%
+_________________________________
+tracks_test :  ['data100.csv'] len : 1
+test A : 29
+test N : 91
+n_segments:  120
+porportion:  A : 24.166666666666668% N  : 75.83333333333333%
+1:train , 2:test1
+data105.csv
+_________________________________
+_________________________________
+A : 78
+N : 42
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv'] len : 2
+train A : 15
+train N : 225
+n_segments:  120
+porportion:  A : 12.5% N  : 187.5%
+_________________________________
+tracks_test :  ['data100.csv'] len : 1
+test A : 29
+test N : 91
+n_segments:  120
+porportion:  A : 24.166666666666668% N  : 75.83333333333333%
+1:train , 2:test2
+data106.csv
+_________________________________
+_________________________________
+A : 80
+N : 40
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv'] len : 2
+train A : 15
+train N : 225
+n_segments:  240
+porportion:  A : 6.25% N  : 93.75%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv'] len : 2
+test A : 107
+test N : 133
+n_segments:  240
+porportion:  A : 44.583333333333336% N  : 55.41666666666667%
+1:train , 2:test1
+data107.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv'] len : 3
+train A : 95
+train N : 265
+n_segments:  240
+porportion:  A : 39.58333333333333% N  : 110.41666666666667%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv'] len : 2
+test A : 107
+test N : 133
+n_segments:  240
+porportion:  A : 44.583333333333336% N  : 55.41666666666667%
+1:train , 2:test2
+data108.csv
+_________________________________
+_________________________________
+A : 53
+N : 67
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv'] len : 3
+train A : 95
+train N : 265
+n_segments:  360
+porportion:  A : 26.38888888888889% N  : 73.61111111111111%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv'] len : 3
+test A : 227
+test N : 133
+n_segments:  360
+porportion:  A : 63.05555555555556% N  : 36.94444444444444%
+1:train , 2:test2
+data109.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv'] len : 3
+train A : 95
+train N : 265
+n_segments:  480
+porportion:  A : 19.791666666666664% N  : 55.208333333333336%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv'] len : 4
+test A : 280
+test N : 200
+n_segments:  480
+porportion:  A : 58.333333333333336% N  : 41.66666666666667%
+1:train , 2:test1
+data111.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv'] len : 4
+train A : 215
+train N : 265
+n_segments:  480
+porportion:  A : 44.79166666666667% N  : 55.208333333333336%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv'] len : 4
+test A : 280
+test N : 200
+n_segments:  480
+porportion:  A : 58.333333333333336% N  : 41.66666666666667%
+1:train , 2:test2
+data112.csv
+_________________________________
+_________________________________
+A : 8
+N : 112
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv'] len : 4
+train A : 215
+train N : 265
+n_segments:  600
+porportion:  A : 35.833333333333336% N  : 44.166666666666664%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv'] len : 5
+test A : 400
+test N : 200
+n_segments:  600
+porportion:  A : 66.66666666666666% N  : 33.33333333333333%
+1:train , 2:test1
+data113.csv
+_________________________________
+_________________________________
+A : 6
+N : 114
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv'] len : 5
+train A : 223
+train N : 377
+n_segments:  600
+porportion:  A : 37.166666666666664% N  : 62.83333333333333%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv'] len : 5
+test A : 400
+test N : 200
+n_segments:  600
+porportion:  A : 66.66666666666666% N  : 33.33333333333333%
+1:train , 2:test1
+data114.csv
+_________________________________
+_________________________________
+A : 36
+N : 84
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv'] len : 6
+train A : 229
+train N : 491
+n_segments:  600
+porportion:  A : 38.166666666666664% N  : 81.83333333333334%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv'] len : 5
+test A : 400
+test N : 200
+n_segments:  600
+porportion:  A : 66.66666666666666% N  : 33.33333333333333%
+1:train , 2:test2
+data115.csv
+_________________________________
+_________________________________
+A : 5
+N : 115
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv'] len : 6
+train A : 229
+train N : 491
+n_segments:  720
+porportion:  A : 31.805555555555554% N  : 68.19444444444444%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv'] len : 6
+test A : 436
+test N : 284
+n_segments:  720
+porportion:  A : 60.55555555555555% N  : 39.44444444444444%
+1:train , 2:test1
+data116.csv
+_________________________________
+_________________________________
+A : 69
+N : 51
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv'] len : 7
+train A : 234
+train N : 606
+n_segments:  720
+porportion:  A : 32.5% N  : 84.16666666666667%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv'] len : 6
+test A : 436
+test N : 284
+n_segments:  720
+porportion:  A : 60.55555555555555% N  : 39.44444444444444%
+1:train , 2:test2
+data117.csv
+_________________________________
+_________________________________
+A : 2
+N : 118
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv'] len : 7
+train A : 234
+train N : 606
+n_segments:  840
+porportion:  A : 27.857142857142858% N  : 72.14285714285714%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test1
+data118.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv'] len : 8
+train A : 236
+train N : 724
+n_segments:  840
+porportion:  A : 28.095238095238095% N  : 86.19047619047619%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test1
+data119.csv
+_________________________________
+_________________________________
+A : 110
+N : 10
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv'] len : 9
+train A : 356
+train N : 724
+n_segments:  840
+porportion:  A : 42.38095238095238% N  : 86.19047619047619%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test1
+data121.csv
+_________________________________
+_________________________________
+A : 7
+N : 113
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv'] len : 10
+train A : 466
+train N : 734
+n_segments:  840
+porportion:  A : 55.47619047619048% N  : 87.38095238095238%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test1
+data122.csv
+_________________________________
+_________________________________
+A : 1
+N : 119
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv'] len : 11
+train A : 473
+train N : 847
+n_segments:  840
+porportion:  A : 56.30952380952381% N  : 100.83333333333333%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test1
+data123.csv
+_________________________________
+_________________________________
+A : 3
+N : 117
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv'] len : 12
+train A : 474
+train N : 966
+n_segments:  840
+porportion:  A : 56.42857142857143% N  : 114.99999999999999%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test1
+data124.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv'] len : 13
+train A : 477
+train N : 1083
+n_segments:  840
+porportion:  A : 56.785714285714285% N  : 128.92857142857144%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test1
+data200.csv
+_________________________________
+_________________________________
+A : 114
+N : 6
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv'] len : 14
+train A : 597
+train N : 1083
+n_segments:  840
+porportion:  A : 71.07142857142857% N  : 128.92857142857144%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test1
+data201.csv
+_________________________________
+_________________________________
+A : 84
+N : 36
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv'] len : 15
+train A : 711
+train N : 1089
+n_segments:  840
+porportion:  A : 84.64285714285714% N  : 129.64285714285714%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv'] len : 7
+test A : 505
+test N : 335
+n_segments:  840
+porportion:  A : 60.11904761904761% N  : 39.88095238095239%
+1:train , 2:test2
+data202.csv
+_________________________________
+_________________________________
+A : 32
+N : 88
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv'] len : 15
+train A : 711
+train N : 1089
+n_segments:  960
+porportion:  A : 74.0625% N  : 113.43749999999999%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv'] len : 8
+test A : 589
+test N : 371
+n_segments:  960
+porportion:  A : 61.354166666666664% N  : 38.645833333333336%
+1:train , 2:test1
+data203.csv
+_________________________________
+_________________________________
+A : 116
+N : 4
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv'] len : 16
+train A : 743
+train N : 1177
+n_segments:  960
+porportion:  A : 77.39583333333333% N  : 122.60416666666667%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv'] len : 8
+test A : 589
+test N : 371
+n_segments:  960
+porportion:  A : 61.354166666666664% N  : 38.645833333333336%
+1:train , 2:test1
+data205.csv
+_________________________________
+_________________________________
+A : 26
+N : 94
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv'] len : 17
+train A : 859
+train N : 1181
+n_segments:  960
+porportion:  A : 89.47916666666667% N  : 123.02083333333333%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv'] len : 8
+test A : 589
+test N : 371
+n_segments:  960
+porportion:  A : 61.354166666666664% N  : 38.645833333333336%
+1:train , 2:test1
+data207.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv'] len : 18
+train A : 885
+train N : 1275
+n_segments:  960
+porportion:  A : 92.1875% N  : 132.8125%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv'] len : 8
+test A : 589
+test N : 371
+n_segments:  960
+porportion:  A : 61.354166666666664% N  : 38.645833333333336%
+1:train , 2:test1
+data208.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv'] len : 19
+train A : 1005
+train N : 1275
+n_segments:  960
+porportion:  A : 104.6875% N  : 132.8125%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv'] len : 8
+test A : 589
+test N : 371
+n_segments:  960
+porportion:  A : 61.354166666666664% N  : 38.645833333333336%
+1:train , 2:test2
+data209.csv
+_________________________________
+_________________________________
+A : 90
+N : 30
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv'] len : 19
+train A : 1005
+train N : 1275
+n_segments:  1080
+porportion:  A : 93.05555555555556% N  : 118.05555555555556%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv'] len : 9
+test A : 709
+test N : 371
+n_segments:  1080
+porportion:  A : 65.64814814814814% N  : 34.35185185185185%
+1:train , 2:test1
+data210.csv
+_________________________________
+_________________________________
+A : 95
+N : 25
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv'] len : 20
+train A : 1095
+train N : 1305
+n_segments:  1080
+porportion:  A : 101.38888888888889% N  : 120.83333333333333%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv'] len : 9
+test A : 709
+test N : 371
+n_segments:  1080
+porportion:  A : 65.64814814814814% N  : 34.35185185185185%
+1:train , 2:test1
+data212.csv
+_________________________________
+_________________________________
+A : 92
+N : 28
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv'] len : 21
+train A : 1190
+train N : 1330
+n_segments:  1080
+porportion:  A : 110.18518518518519% N  : 123.14814814814814%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv'] len : 9
+test A : 709
+test N : 371
+n_segments:  1080
+porportion:  A : 65.64814814814814% N  : 34.35185185185185%
+1:train , 2:test1
+data213.csv
+_________________________________
+_________________________________
+A : 90
+N : 30
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv'] len : 22
+train A : 1282
+train N : 1358
+n_segments:  1080
+porportion:  A : 118.70370370370371% N  : 125.74074074074073%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv'] len : 9
+test A : 709
+test N : 371
+n_segments:  1080
+porportion:  A : 65.64814814814814% N  : 34.35185185185185%
+1:train , 2:test1
+data214.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv'] len : 23
+train A : 1372
+train N : 1388
+n_segments:  1080
+porportion:  A : 127.03703703703704% N  : 128.51851851851853%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv'] len : 9
+test A : 709
+test N : 371
+n_segments:  1080
+porportion:  A : 65.64814814814814% N  : 34.35185185185185%
+1:train , 2:test2
+data215.csv
+_________________________________
+_________________________________
+A : 69
+N : 51
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv'] len : 23
+train A : 1372
+train N : 1388
+n_segments:  1200
+porportion:  A : 114.33333333333333% N  : 115.66666666666667%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv'] len : 10
+test A : 829
+test N : 371
+n_segments:  1200
+porportion:  A : 69.08333333333333% N  : 30.916666666666664%
+1:train , 2:test1
+data217.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv'] len : 24
+train A : 1441
+train N : 1439
+n_segments:  1200
+porportion:  A : 120.08333333333334% N  : 119.91666666666667%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv'] len : 10
+test A : 829
+test N : 371
+n_segments:  1200
+porportion:  A : 69.08333333333333% N  : 30.916666666666664%
+1:train , 2:test2
+data220.csv
+_________________________________
+_________________________________
+A : 39
+N : 81
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv'] len : 24
+train A : 1441
+train N : 1439
+n_segments:  1320
+porportion:  A : 109.16666666666666% N  : 109.01515151515152%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv'] len : 11
+test A : 949
+test N : 371
+n_segments:  1320
+porportion:  A : 71.8939393939394% N  : 28.106060606060606%
+1:train , 2:test1
+data221.csv
+_________________________________
+_________________________________
+A : 114
+N : 6
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv', 'data220.csv'] len : 25
+train A : 1480
+train N : 1520
+n_segments:  1320
+porportion:  A : 112.12121212121211% N  : 115.15151515151516%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv'] len : 11
+test A : 949
+test N : 371
+n_segments:  1320
+porportion:  A : 71.8939393939394% N  : 28.106060606060606%
+1:train , 2:test2
+data222.csv
+_________________________________
+_________________________________
+A : 72
+N : 48
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv', 'data220.csv'] len : 25
+train A : 1480
+train N : 1520
+n_segments:  1440
+porportion:  A : 102.77777777777777% N  : 105.55555555555556%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv', 'data221.csv'] len : 12
+test A : 1063
+test N : 377
+n_segments:  1440
+porportion:  A : 73.81944444444444% N  : 26.180555555555557%
+1:train , 2:test2
+data223.csv
+_________________________________
+_________________________________
+A : 88
+N : 32
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv', 'data220.csv'] len : 25
+train A : 1480
+train N : 1520
+n_segments:  1560
+porportion:  A : 94.87179487179486% N  : 97.43589743589743%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv', 'data221.csv', 'data222.csv'] len : 13
+test A : 1135
+test N : 425
+n_segments:  1560
+porportion:  A : 72.75641025641025% N  : 27.24358974358974%
+1:train , 2:test1
+data228.csv
+_________________________________
+_________________________________
+A : 110
+N : 10
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv', 'data220.csv', 'data223.csv'] len : 26
+train A : 1568
+train N : 1552
+n_segments:  1560
+porportion:  A : 100.51282051282051% N  : 99.48717948717949%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv', 'data221.csv', 'data222.csv'] len : 13
+test A : 1135
+test N : 425
+n_segments:  1560
+porportion:  A : 72.75641025641025% N  : 27.24358974358974%
+1:train , 2:test2
+data230.csv
+_________________________________
+_________________________________
+A : 78
+N : 42
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv', 'data220.csv', 'data223.csv'] len : 26
+train A : 1568
+train N : 1552
+n_segments:  1680
+porportion:  A : 93.33333333333333% N  : 92.38095238095238%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv', 'data221.csv', 'data222.csv', 'data228.csv'] len : 14
+test A : 1245
+test N : 435
+n_segments:  1680
+porportion:  A : 74.10714285714286% N  : 25.892857142857146%
+1:train , 2:test1
+data232.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv', 'data220.csv', 'data223.csv', 'data230.csv'] len : 27
+train A : 1646
+train N : 1594
+n_segments:  1680
+porportion:  A : 97.97619047619047% N  : 94.88095238095238%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv', 'data221.csv', 'data222.csv', 'data228.csv'] len : 14
+test A : 1245
+test N : 435
+n_segments:  1680
+porportion:  A : 74.10714285714286% N  : 25.892857142857146%
+1:train , 2:test1
+data233.csv
+_________________________________
+_________________________________
+A : 120
+N : 0
+_________________________________
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv', 'data220.csv', 'data223.csv', 'data230.csv', 'data232.csv'] len : 28
+train A : 1766
+train N : 1594
+n_segments:  1680
+porportion:  A : 105.11904761904762% N  : 94.88095238095238%
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv', 'data221.csv', 'data222.csv', 'data228.csv'] len : 14
+test A : 1245
+test N : 435
+n_segments:  1680
+porportion:  A : 74.10714285714286% N  : 25.892857142857146%
+1:train , 2:test2
+tracks_train :  ['data101.csv', 'data103.csv', 'data106.csv', 'data109.csv', 'data112.csv', 'data113.csv', 'data115.csv', 'data117.csv', 'data118.csv', 'data119.csv', 'data121.csv', 'data122.csv', 'data123.csv', 'data124.csv', 'data200.csv', 'data202.csv', 'data203.csv', 'data205.csv', 'data207.csv', 'data209.csv', 'data210.csv', 'data212.csv', 'data213.csv', 'data215.csv', 'data220.csv', 'data223.csv', 'data230.csv', 'data232.csv'] len : 28
+train A : 1766
+train N : 1594
+_________________________________
+tracks_test :  ['data100.csv', 'data105.csv', 'data107.csv', 'data108.csv', 'data111.csv', 'data114.csv', 'data116.csv', 'data201.csv', 'data208.csv', 'data214.csv', 'data217.csv', 'data221.csv', 'data222.csv', 'data228.csv', 'data233.csv'] len : 15
+test A : 1365
+test N : 435
+
+ASUS@Chain MINGW64 /d/UNIVERSITA/Università/Sistemi Multimediali/ECG-CNN-Diagnostic-System/data-15segments/dataset (master)
+$
